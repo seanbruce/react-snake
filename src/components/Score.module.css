@@ -1,0 +1,36 @@
+.score {
+	width: 300px;
+	height: 50px;
+	border: solid 1px #888;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 16px;
+	margin-top: 16px;
+}
+
+.scoreText {
+	font-size: 1.8rem;
+}
+
+.scoreButton {
+	border-style: none;
+	padding: 8px;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 150ms linear;
+}
+
+.scoreButton:hover {
+	background-color: lightgreen;
+}
+
+.scoreButton:active,
+.scoreButton:focus {
+	outline-style: none;
+}
+
+.scoreButton.pause {
+	background-color: lightpink;
+}

@@ -1,0 +1,103 @@
+.control {
+	margin-top: 16px;
+	width: 80%;
+	position: relative;
+}
+
+.button {
+	width: 60px;
+	height: 60px;
+	background-color: lightslategray;
+}
+
+.button:hover {
+	background-color: darkslategray;
+}
+
+.left {
+	-webkit-clip-path: polygon(
+		40% 0%,
+		40% 20%,
+		100% 20%,
+		100% 80%,
+		40% 80%,
+		40% 100%,
+		0% 50%
+	);
+	clip-path: polygon(
+		40% 0%,
+		40% 20%,
+		100% 20%,
+		100% 80%,
+		40% 80%,
+		40% 100%,
+		0% 50%
+	);
+	margin-top: 30px;
+	float: left;
+}
+
+.right {
+	-webkit-clip-path: polygon(
+		0% 20%,
+		60% 20%,
+		60% 0%,
+		100% 50%,
+		60% 100%,
+		60% 80%,
+		0% 80%
+	);
+	clip-path: polygon(
+		0% 20%,
+		60% 20%,
+		60% 0%,
+		100% 50%,
+		60% 100%,
+		60% 80%,
+		0% 80%
+	);
+	margin-top: 30px;
+	float: right;
+}
+
+.up {
+	-webkit-clip-path: polygon(
+		20% 40%,
+		0 40%,
+		50% 0,
+		100% 40%,
+		80% 40%,
+		80% 100%,
+		20% 100%
+	);
+	clip-path: polygon(
+		20% 40%,
+		0 40%,
+		50% 0,
+		100% 40%,
+		80% 40%,
+		80% 100%,
+		20% 100%
+	);
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.down {
+	-webkit-clip-path: polygon(
+		20% 60%,
+		0 60%,
+		50% 100%,
+		100% 60%,
+		80% 60%,
+		80% 0,
+		20% 0
+	);
+	clip-path: polygon(20% 60%, 0 60%, 50% 100%, 100% 60%, 80% 60%, 80% 0, 20% 0);
+	position: absolute;
+	top: 70px;
+	left: 50%;
+	transform: translateX(-50%);
+}
